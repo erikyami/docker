@@ -11,14 +11,14 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider "virtualbox" do |vb|
     #vb.gui = true
-    vb.memory = 2048
+    vb.memory = 3072
   end
 
   ## docker.hl.local
   config.vm.define "docker.hl.local" do |machine|
     machine.vm.hostname = "docker.hl.local"
     machine.vm.box = "centos/7"
-    machine.vm.network "private_network", ip: "192.168.57.100"
+    machine.vm.network "private_network", ip: "192.168.57.80"
 
   end
 
