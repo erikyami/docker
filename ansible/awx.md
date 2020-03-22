@@ -1,6 +1,6 @@
 # Instalando AWX com docker-compose
 
-Instalação da ferramente AWX
+Instalação da ferramenta AWX
 
 
 ## Clone do Repositorio
