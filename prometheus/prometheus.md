@@ -37,4 +37,27 @@ docker pull grafana/grafana
 
 ```
 docker run -d --name=grafana -p 3000:3000 grafana/grafana
+
+
+
+
+
+http://192.168.57.80:3000
+
+user / password
+admin / admin
+
+```
+
+# Configurando cadvisor
+
+```
+docker image pull google/cadvisor
+
+
+$ sudo docker run --volume=/:/rootfs:ro \
+--volume=/var/run:/var/run:ro --volume=/sys:/sys:ro \
+--volume=/var/lib/docker/:/var/lib/docker:ro \
+--volume=/dev/disk/:/dev/disk:ro --publish=8080:8080 \
+--detach=true --name=cadvisor google/cadvisor:latest
 ```
