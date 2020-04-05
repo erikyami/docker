@@ -20,7 +20,5 @@ Vagrant.configure("2") do |config|
     machine.vm.hostname = "docker.hl.local"
     machine.vm.box = "centos/7"
     machine.vm.network "private_network", ip: "192.168.57.80"
-
   end
-
 end
